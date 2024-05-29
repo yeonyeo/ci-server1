@@ -35,4 +35,4 @@ jobs:
         script: |
           docker pull ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPOSITORY }}
           docker rm -f ${{ secrets.DOCKER_REPOSITORY }}
-          docker run --name ${{ secrets.DOCKER_REPOSITORY }} -p 8080:8080 --network ${{ secrets.DOCKER_NETWORK }} -d ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPOSITORY }}
+          docker run --name ${{ secrets.DOCKER_REPOSITORY }} -p 8081:8080 --network ${{ secrets.DOCKER_NETWORK }} -d ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPOSITORY }}
