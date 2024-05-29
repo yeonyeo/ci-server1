@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: auth
+  datasource:
+    url: jdbc:mysql://mymysql:3306/auth_test?serverTimezone=Asia/Seoul
+    username: ${username}
+    password: ${password}
+  jpa:
+    hibernate:
+      ddl-auto: create
