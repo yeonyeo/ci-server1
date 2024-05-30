@@ -2,6 +2,7 @@ name: Deploy1
 on:
   pull_request:
     branches: [ "main", "dev" ]
+    
 jobs:
   deploy:
     runs-on: "ubuntu-latest"
