@@ -2,9 +2,10 @@ spring:
   application:
     name: auth
   datasource:
-    url: jdbc:mysql://mymysql:3306/auth_test?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://${GATEWAY_HOST}:3306/auth_test?serverTimezone=Asia/Seoul
     username: root
     password: 1q2w3e4r
+
   jpa:
     hibernate:
       ddl-auto: create
