@@ -2,8 +2,8 @@ spring:
   application:
     name: auth
   datasource:
-    url: jdbc:mysql://${GATEWAY_HOST}:3306/auth_test?serverTimezone=Asia/Seoul
-    username: root
+    url: jdbc:mysql://${GATEWAY_HOST}:3307/auth_test?serverTimezone=Asia/Seoul
+    username: roo
     password: 1q2w3e4r
 
   jpa:
